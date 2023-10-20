@@ -8,8 +8,8 @@ class PostListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title:
-          Text("${post.title}", style: TextStyle(fontWeight: FontWeight.bold)),
+      title: Text("${post.productName}",
+          style: TextStyle(fontWeight: FontWeight.bold)),
       subtitle: Text(
         "${post.content}",
         style: TextStyle(color: Colors.black45),

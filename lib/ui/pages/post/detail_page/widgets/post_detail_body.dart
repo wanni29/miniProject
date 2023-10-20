@@ -25,7 +25,7 @@ class PostDetailBody extends ConsumerWidget {
         padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
-            PostDetailTitle("${post.title}"),
+            PostDetailTitle("${post.productName}"),
             const SizedBox(height: largeGap),
             PostDetailProfile(),
             PostDetailButtons(),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blog/data/model/post.dart';
+import 'package:flutter_blog/data/model/user.dart';
 import 'package:flutter_blog/data/store/param_store.dart';
 import 'package:flutter_blog/ui/pages/post/detail_page/post_detail_page.dart';
 import 'package:flutter_blog/ui/pages/post/detail_page/post_detail_view_model.dart';
@@ -14,10 +15,6 @@ class PostListBody extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     PostListModel? model = ref.watch(postListProvider); // state == null
     List<Post> posts = [];
-
-    if (model != null) {
-      posts = model.posts;
-    }
 
     return ListView.separated(
       itemCount: posts.length,
